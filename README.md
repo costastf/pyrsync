@@ -1,7 +1,10 @@
 pyrsync
 =======
 
-(pronounced piercing). Python lightweight rsync wrapper. Useful for using rsync in python projects.
+(pronounced piercing). Python lightweight rsync wrapper. 
+Useful for using rsync in python projects.
+
+This library wraps rsync in an object oriented manner. Upon instantiation it searches for the rsync executable. It uses "which" in linux and looks at the local folder in windows. It can work with a cygwin statically compiled rsync. In windows it automatically changes the paths in cygwin compatible paths. (It has not been thoroughly tested in windows.) It's usage is as follows.
 
 Usage :
 ``` 
